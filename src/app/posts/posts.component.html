@@ -8,3 +8,28 @@
     <a class="nav-link" routerLink="/posts/show">My posts</a>
   </li>
 </ul>
+<button (click)="getPosts()" class="btn btn-info">Get Posts</button>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">subject</th>
+      <th scope="col">description</th>
+      <th scope="col">author</th>
+      <th scope="col">city</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of posts">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.subject}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.author}}</td>
+      <td>{{item.city}}</td>
+      <td><a [routerLink]="['/posts/details',item.id]">show</a></td>
+
+    </tr>
+
+  </tbody>
+</table>
