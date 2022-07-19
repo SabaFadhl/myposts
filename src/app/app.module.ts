@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { CreateComponent } from './posts/create/create.component';
 import { ShowComponent } from './posts/show/show.component';
 import { DetailsComponent } from './posts/details/details.component';
+import { AdminComponent } from './admin/admin.component';
+import { GuardService } from './guard.service';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,14 @@ import { DetailsComponent } from './posts/details/details.component';
     HomeComponent,
     CreateComponent,
     ShowComponent,
-    DetailsComponent
+    DetailsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GuardService,PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

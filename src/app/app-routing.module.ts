@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
+import { GuardService } from './guard.service';
 import { HomeComponent } from './home/home.component';
 import { CreateComponent } from './posts/create/create.component';
 import { DetailsComponent } from './posts/details/details.component';
@@ -36,7 +38,12 @@ const routes: Routes = [
         component:DetailsComponent
       }
 
+
     ]
+  },
+  {
+    path:'admin',
+    component:AdminComponent,canActivate:[GuardService]
   }
 ];
 
