@@ -17,6 +17,7 @@ import { PlaceholderComponent } from './placeholder/placeholder.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import { ExtrajsonComponent } from './extrajson/extrajson.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { RegisterComponent } from './register/register.component';
     DetailsComponent,
     AdminComponent,
     PlaceholderComponent,
-    RegisterComponent
+    RegisterComponent,
+    ExtrajsonComponent
   ],
   imports: [
     BrowserModule,

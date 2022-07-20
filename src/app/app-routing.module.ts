@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
+import { ExtrajsonComponent } from './extrajson/extrajson.component';
 import { GuardService } from './guard.service';
 import { HomeComponent } from './home/home.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path:'place',
     component:PlaceholderComponent
+  },
+  {
+    path:'json',
+    component:ExtrajsonComponent
   },
   {
     path:'register',
