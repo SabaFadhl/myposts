@@ -12,7 +12,7 @@ import { DetailsComponent } from './posts/details/details.component';
 import { AdminComponent } from './admin/admin.component';
 import { GuardService } from './guard.service';
 import { PostService } from './post.service';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { PostService } from './post.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LazyLoadImageModule
   ],
   providers: [GuardService,PostService],
   bootstrap: [AppComponent]
