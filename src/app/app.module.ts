@@ -13,6 +13,8 @@ import { AdminComponent } from './admin/admin.component';
 import { GuardService } from './guard.service';
 import { PostService } from './post.service';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { PlaceholderComponent } from './placeholder/placeholder.component';
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +24,14 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     CreateComponent,
     ShowComponent,
     DetailsComponent,
-    AdminComponent
+    AdminComponent,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    HttpClientModule
   ],
   providers: [GuardService,PostService],
   bootstrap: [AppComponent]

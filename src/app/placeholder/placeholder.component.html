@@ -1,0 +1,28 @@
+<p>placeholder works!</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">user Id</th>
+      <th scope="col">title</th>
+      <th scope="col">body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of users">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.userId}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.body}}</td>
+      <!-- <td><a [routerLink]="['/posts/details',item.id]">show</a></td> -->
+
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="container">
+  <pre>{{users | json}}</pre>
+</div>
+
