@@ -9,6 +9,7 @@ import { CreateComponent } from './posts/create/create.component';
 import { DetailsComponent } from './posts/details/details.component';
 import { PostsComponent } from './posts/posts.component';
 import { ShowComponent } from './posts/show/show.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path:'place',
     component:PlaceholderComponent
+  },
+  {
+    path:'register',
+    component:RegisterComponent
   },
   {
     path:'about',

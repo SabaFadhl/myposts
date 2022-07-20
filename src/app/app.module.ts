@@ -15,6 +15,8 @@ import { PostService } from './post.service';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,13 +27,15 @@ import {HttpClientModule} from '@angular/common/http'
     ShowComponent,
     DetailsComponent,
     AdminComponent,
-    PlaceholderComponent
+    PlaceholderComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LazyLoadImageModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [GuardService,PostService],
   bootstrap: [AppComponent]
