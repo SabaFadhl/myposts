@@ -18,6 +18,8 @@ import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { ExtrajsonComponent } from './extrajson/extrajson.component';
+import { ExtraqrcodeComponent } from './extraqrcode/extraqrcode.component';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +32,16 @@ import { ExtrajsonComponent } from './extrajson/extrajson.component';
     AdminComponent,
     PlaceholderComponent,
     RegisterComponent,
-    ExtrajsonComponent
+    ExtrajsonComponent,
+    ExtraqrcodeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LazyLoadImageModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxQRCodeModule
   ],
   providers: [GuardService,PostService],
   bootstrap: [AppComponent]

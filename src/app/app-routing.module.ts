@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { ExtrajsonComponent } from './extrajson/extrajson.component';
+import { ExtraqrcodeComponent } from './extraqrcode/extraqrcode.component';
 import { GuardService } from './guard.service';
 import { HomeComponent } from './home/home.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'qr',
+    component:ExtraqrcodeComponent
   },
   {
     path:'about',
